@@ -1,4 +1,3 @@
-
 package studentRecordsBackupTree.bst;
 
 //Binary class tree to store values in accordance with BST rule
@@ -7,6 +6,7 @@ public class BST {
 
     //constructor
     public BST(){
+
         root = null;
     }
 

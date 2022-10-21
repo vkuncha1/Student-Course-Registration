@@ -1,9 +1,8 @@
-
 package studentRecordsBackupTree.bst;
 
 import java.util.ArrayList;
 
-public class Node {
+public class Node implements observerInterface,subjectInterface {
     //Declaring the Bnumber and description variables
     int Bnumber;
     String description;
@@ -66,6 +65,33 @@ public class Node {
 
     public void setRight(Node rightIn){
         right = rightIn;
+    }
+
+    /**
+     //     * Register the backups as observers
+     //     * @param objIn
+     //     */
+    @Override
+    public void registerObserver(Node objIn) {
+
+    }
+
+    /**
+     * Un Register the backups as observers
+     * @param objIn
+     */
+    @Override
+    public void unregisterObserver(Node objIn) {
+
+    }
+
+    /**
+     *
+     * @param objIn
+     */
+    @Override
+    public void receiveData(Node objIn) {
+
     }
 
 

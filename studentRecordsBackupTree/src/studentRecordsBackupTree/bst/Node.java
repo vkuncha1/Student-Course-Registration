@@ -2,19 +2,43 @@ package studentRecordsBackupTree.bst;
 
 import java.util.ArrayList;
 
-public class Node implements observerInterface,subjectInterface {
+public class Node implements observerInterface,subjectInterface,Cloneable {
     //Declaring the Bnumber and description variables
     int Bnumber;
     String description;
-    public Node left;
-    public Node right;
+    Node left;
+    Node right;
+//    Node backup_1;
+//    Node backup_2;
 
+
+//    protected Node clone() throws CloneNotSupportedException {
+//        Node node = (Node) super.clone();
+//        return node;
+//    }
+    public Node clone() {
+
+        Node temp = null;
+        try {
+            temp = (Node) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+        return temp;
+    }
 
     /**
      * Constructor - Initializes the class variables
      */
+
     public Node(){
-        Bnumber = Integer.parseInt(null);
+        description = null;
+        left = null;
+        right = null;
+    }
+    public Node(Integer bnumberIn){
+        Bnumber = bnumberIn;
         description = null;
         left = null;
         right = null;
@@ -44,8 +68,6 @@ public class Node implements observerInterface,subjectInterface {
     }
 
 
-
-
     /**
      * Setters of the class variables.
      */
@@ -67,31 +89,56 @@ public class Node implements observerInterface,subjectInterface {
         right = rightIn;
     }
 
+
+
+
+
     /**
      //     * Register the backups as observers
      //     * @param objIn
      //     */
-    @Override
-    public void registerObserver(Node objIn) {
 
+
+    @Override
+    public void registerObserver(Node ObjIn) {
+        //listeners.add(ObjIn);
+    }
+
+    /**
+     * @param ObjIn
+     */
+    @Override
+    public void unregisterObserver(Node ObjIn) {
+        //listeners.remove(ObjIn);
     }
 
     /**
      * Un Register the backups as observers
      * @param objIn
      */
-    @Override
-    public void unregisterObserver(Node objIn) {
 
+
+    /**
+     * @param
+     */
+    @Override
+    public void notifyobs() {
+        //for(Node obs :  listeners ){
+        //    obs.receiveData();
+        //}
     }
 
     /**
      *
-     * @param objIn
+     * @param
      */
     @Override
-    public void receiveData(Node objIn) {
+    public void receiveData() {
 
+    }
+    public void upload(int bnumberIn){
+        Bnumber = bnumberIn;
+        notifyobs();
     }
 
 

@@ -6,7 +6,6 @@ public class BST {
 
     //constructor
     public BST(){
-
         root = null;
     }
 
@@ -15,11 +14,12 @@ public class BST {
     public void insert(int BnumberIn){
 
         root = insertValue(root,BnumberIn);
+
     }
 
     public Node insertValue(Node root,int BnumberIn){
         if (root == null){
-            root = new Node();
+            root = new Node(BnumberIn);
             return root;
         }
         else if (BnumberIn < root.Bnumber ){
@@ -39,7 +39,7 @@ public class BST {
     public void display(Node root) {
         if (root != null) {
             display(root.left);
-            System.out.print("BST :"+root.Bnumber + ",");
+            System.out.print(root.Bnumber + ",");
             display(root.right);
         }
     }

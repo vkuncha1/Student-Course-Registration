@@ -7,13 +7,18 @@ import java.util.Scanner;
 
 public class BSTBuilder {
     BST bst;
+    BST backup_1;
+    BST backup_2;
+
+
+
 
     //constructor
 
     public BSTBuilder(BST bstIn){
         bst = bstIn;
-    }
 
+    }
 
 
     /**
@@ -21,10 +26,14 @@ public class BSTBuilder {
      *
      */
 
-    public void bstInput()  {
+    public void bstInput() throws CloneNotSupportedException {
 
-        BST bst = new BST();
-        //Node node = new Node();
+         bst = new BST();
+
+//        BST backup_1 = new BST();
+//        BST backup_2 = new BST();
+
+
 
 
         //File path for CourseInfo
@@ -40,7 +49,6 @@ public class BSTBuilder {
                     int data = Integer.parseInt(myReader.nextLine());
                     bstlist.add(data);
                 }
-                System.out.println("Array List is : " + bstlist);
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
@@ -50,18 +58,21 @@ public class BSTBuilder {
         }
 
         //calling the bst insert method.
-        try {
-            int i;
-            for (i = 0; i < bstlist.size(); i++) {
-                bst.insert(bstlist.get(i));
-
-            }
+        //try {
+        int i;
+        for (i = 0; i < bstlist.size(); i++) {
+            bst.insert(bstlist.get(i));
         }
-        catch(Exception e)
-        {
-            System.err.println("Unable to insert Bnumber due to : "+e);
-        }
+        //}
+//        catch(Exception e)
+//        {
+//            System.err.println("Unable to insert Bnumber due to : "+e);
+//        }
+        backup_1 =  bst.clone();
+        backup_2 = bst.clone();
         bst.display_bst();
+//        backup_1.display_bst();
+//        backup_2.display_bst();
     }
 
 }

@@ -8,5 +8,6 @@ import java.util.ArrayList;
 public interface StdoutDisplayInterface {
 
     public void TerminalOutput(ArrayList<Integer> outputIn, String bstIn);
+    public void TerminalOutputSum(ArrayList<Integer> outputIn, String bstIn);
 
 }

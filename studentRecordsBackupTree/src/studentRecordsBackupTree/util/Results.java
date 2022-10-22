@@ -18,20 +18,11 @@ import static studentRecordsBackupTree.util.MyLogger.DebugLevel.FILE_PROCESSOR;
 
 public class Results implements FileDisplayInterface, StdoutDisplayInterface {
 
-    //Writing Error File
 
-    public void writeError(String errorIn) {
-        try {
-            String currentpath = new File("").getAbsolutePath();
-            String regErrorPath = currentpath + "/errorLog.txt";
-            FileWriter regResults = new FileWriter(regErrorPath, true);
-            regResults.write(errorIn + System.lineSeparator());
-            regResults.close();
-        } catch (Exception ex) {
-            System.err.println("Error in writing into Error File: " + ex);
-        }
-    }
-
+    /**
+     * Get the sum from Nodes of the tree
+     * @param arrIn
+     */
     public int get_sum(ArrayList<Integer> arrIn) {
         int sum_of_nodes = 0;
         for (int j = 0; j < arrIn.size(); j++) {
@@ -41,7 +32,9 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
     }
 
     /**
-     *
+     * Write Inorder traversal into file
+     * @param outputIn
+     * @param bstIn
      */
     @Override
     public void FileOutputDisplay(ArrayList<Integer> outputIn, String bstIn) {
@@ -64,10 +57,18 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
             regResults.close();
 
         } catch (Exception ex) {
-            System.err.println("Error in writing into Error File: " + ex);
+            String Err = "Error While Writing Inorder traversal into file :" + ex + ", Please,try again";
+            Results conf = new Results();
+            conf.writeError(Err);
         }
     }
 
+    /**
+     * Write sum of nodes into file
+     * @param outputIn
+     * @param bstIn
+     */
+    @Override
     public void FileOutputSum(ArrayList<Integer> outputIn, String bstIn) {
         try {
             String currentpath = new File("").getAbsolutePath();
@@ -88,7 +89,9 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
             }
             regResults.close();
         } catch (Exception ex) {
-            System.err.println("Error in writing into Error File: " + ex);
+            String Err = "Error While Writing sum of nodes into file :" + ex + ", Please,try again";
+            Results conf = new Results();
+            conf.writeError(Err);
         }
     }
 
@@ -113,11 +116,18 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
                 logger.writeMessage("Backup-2: " + outputIn.toString().replace("[", "").replace("]", "") +System.lineSeparator(),logger.typeConversion(1));
             }
         } catch (Exception ex) {
-            System.err.println("Error in writing into Error File: " + ex);
+            String Err = "Error While printing the messages in terminal :" + ex + ", Please,try again";
+            Results conf = new Results();
+            conf.writeError(Err);
         }
     }
 
-
+    /**
+     * TerminalOutput method uses Logger to print the messages in terminal.
+     * @param outputIn
+     * @param bstIn
+     */
+    @Override
     public void TerminalOutputSum(ArrayList<Integer> outputIn, String bstIn) {
         try {
             MyLogger logger = new MyLogger();
@@ -127,14 +137,34 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
                 logger.writeMessage("BST: " + get_sum(outputIn) ,logger.typeConversion(1));
             }
             if (bstIn.equals("backup_1")) {
-                logger.writeMessage("backup_1: " + get_sum(outputIn),logger.typeConversion(1) );
+                logger.writeMessage("Backup-1: " + get_sum(outputIn),logger.typeConversion(1) );
             }
             if (bstIn.equals("backup_2")) {
-                logger.writeMessage("backup_2: " + get_sum(outputIn) + System.lineSeparator() ,logger.typeConversion(1));
-
+                logger.writeMessage("Backup-2: " + get_sum(outputIn) + System.lineSeparator() ,logger.typeConversion(1));
             }
         } catch (Exception ex) {
-            System.err.println("Error in writing into Error File: " + ex);
+            String Err = "Error While printing the messages in terminal :" + ex + ", Please,try again";
+            Results conf = new Results();
+            conf.writeError(Err);
+        }
+    }
+
+    /**
+     * Write errors into error file.
+     * @param errorIn
+     */
+
+    @Override
+    public void writeError(String errorIn){
+        MyLogger logger = new MyLogger();
+        try{
+            String currentpath = new File("").getAbsolutePath();
+            String regErrorPath = currentpath + "/errorLog.txt";
+            FileWriter regResults = new FileWriter(regErrorPath,true);
+            regResults.write(errorIn+ System.lineSeparator());
+            regResults.close();
+        }catch(Exception ex){
+            logger.writeMessage("Error in writing into Error File: "+ex ,logger.typeConversion(1));
         }
     }
 }

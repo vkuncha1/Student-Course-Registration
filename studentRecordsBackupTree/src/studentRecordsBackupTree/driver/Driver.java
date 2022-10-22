@@ -23,12 +23,14 @@ public class Driver {
 		result.FileOutputDisplay(bstbuilder.getBst_result(),"BST");
 		result.FileOutputDisplay(bstbuilder.getBackup_1_result(),"backup_1");
 		result.FileOutputDisplay(bstbuilder.getBackup_2_result(),"backup_2");
+
 		/**
 		 * print the sum of all the B-Numbers in each of the three trees in .txt file
 		 */
 		result.FileOutputSum(bstbuilder.getBst_result(),"BST");
 		result.FileOutputSum(bstbuilder.getBackup_1_result(),"backup_1");
 		result.FileOutputSum(bstbuilder.getBackup_2_result(),"backup_2");
+
 		/**
 		 * Inorder traversal to print the values from the three trees in terminal
 		 */

@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 /**
  * FileProcessor API to read the input from input files.
- *
  */
 
 public class FileProcessor {

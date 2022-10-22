@@ -129,7 +129,6 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
                 '}';
     }
 
-
     /**
      *
      */

@@ -1,32 +1,16 @@
 package studentRecordsBackupTree.bst;
+import java.lang.Cloneable;
 
 import java.util.ArrayList;
 
-public class Node implements observerInterface,subjectInterface,Cloneable {
+public class Node implements observerInterface,subjectInterface,Cloneable{
     //Declaring the Bnumber and description variables
-    int Bnumber;
-    String description;
-    Node left;
-    Node right;
-//    Node backup_1;
-//    Node backup_2;
+    private int Bnumber;
+    private String description;
+    private Node left;
+    private Node right;
 
 
-//    protected Node clone() throws CloneNotSupportedException {
-//        Node node = (Node) super.clone();
-//        return node;
-//    }
-    public Node clone() {
-
-        Node temp = null;
-        try {
-            temp = (Node) super.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-        return temp;
-    }
 
     /**
      * Constructor - Initializes the class variables
@@ -60,6 +44,7 @@ public class Node implements observerInterface,subjectInterface,Cloneable {
     }
 
     public Node getLeft(){
+
         return left;
     }
 
@@ -140,7 +125,13 @@ public class Node implements observerInterface,subjectInterface,Cloneable {
         Bnumber = bnumberIn;
         notifyobs();
     }
-
+    public Node clone() {
+        try {
+            return (Node) super.clone();
+        } catch (CloneNotSupportedException e) {
+            return this;
+        }
+    }
 
 
 

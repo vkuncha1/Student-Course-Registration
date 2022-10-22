@@ -2,27 +2,44 @@ package studentRecordsBackupTree.driver;
 import studentRecordsBackupTree.bst.BST;
 import studentRecordsBackupTree.bst.BSTBuilder;
 import studentRecordsBackupTree.util.Results;
-
-
-
 /**
  * @author Venkata Achyuth, Kunchapu
  *
  */
 public class Driver {
 	public static void main(String[] args)  {
+
+		/**
+		 *  BSTBuilder to build the three trees.
+		 */
 		BST bst = new BST();
 		BSTBuilder bstbuilder = new BSTBuilder(bst);
 		bstbuilder.bstInput();
 
-		//inorder traversal to print the values from the three trees.
+		/**
+		 * Inorder traversal to print the values from the three trees in .txt file
+		 */
 		Results result = new Results();
 		result.FileOutputDisplay(bstbuilder.getBst_result(),"BST");
 		result.FileOutputDisplay(bstbuilder.getBackup_1_result(),"backup_1");
 		result.FileOutputDisplay(bstbuilder.getBackup_2_result(),"backup_2");
-		//print sum
+		/**
+		 * print the sum of all the B-Numbers in each of the three trees in .txt file
+		 */
 		result.FileOutputSum(bstbuilder.getBst_result(),"BST");
 		result.FileOutputSum(bstbuilder.getBackup_1_result(),"backup_1");
 		result.FileOutputSum(bstbuilder.getBackup_2_result(),"backup_2");
+		/**
+		 * Inorder traversal to print the values from the three trees in terminal
+		 */
+		result.TerminalOutput(bstbuilder.getBst_result(),"BST");
+		result.TerminalOutput(bstbuilder.getBackup_1_result(),"backup_1");
+		result.TerminalOutput(bstbuilder.getBackup_2_result(),"backup_2");
+		/**
+		 * print the sum of all the B-Numbers in each of the three trees in terminal
+		 */
+		result.TerminalOutputSum(bstbuilder.getBst_result(),"BST");
+		result.TerminalOutputSum(bstbuilder.getBackup_1_result(),"backup_1");
+		result.TerminalOutputSum(bstbuilder.getBackup_2_result(),"backup_2");
 	}
 }

@@ -43,14 +43,9 @@ public class BST{
 
     public ArrayList<Integer> display_bst() {
         display(root);
-        System.out.println("BST: "+output_list.toString().replace("[","").replace("]",""));
         return output_list;
     }
 
-//    public void display_bst() {
-//        display(root);
-//        //System.out.println("BST: "+output_list.toString().replace("[","").replace("]",""));
-//    }
 
 
 
@@ -58,7 +53,6 @@ public class BST{
         if (root != null) {
             display(root.getLeft());
             output_list.add(root.getBnumber());
-//            System.out.println(root.getBnumber() + ",");
             display(root.getRight());
         }
 
@@ -69,7 +63,6 @@ public class BST{
 
     public ArrayList<Integer> display_bst_bkp1() {
         display1(root);
-        System.out.println("Backup-1: "+output_list_bkp1.toString().replace("[","").replace("]",""));
         return output_list_bkp1;
     }
 
@@ -78,7 +71,6 @@ public class BST{
         if (root != null) {
             display1(root.getLeft());
             output_list_bkp1.add(root.getBnumber());
-            //System.out.println(root.Bnumber + ",");
             display1(root.getRight());
         }
 
@@ -90,7 +82,6 @@ public class BST{
 
     public ArrayList<Integer> display_bst_bkp2() {
         display2(root);
-        System.out.println("Backup-2: "+output_list_bkp2.toString().replace("[","").replace("]",""));
         return output_list_bkp2;
     }
 
@@ -99,7 +90,6 @@ public class BST{
         if (root != null) {
             display2(root.getLeft());
             output_list_bkp2.add(root.getBnumber());
-            //System.out.println(root.Bnumber + ",");
             display2(root.getRight());
         }
 

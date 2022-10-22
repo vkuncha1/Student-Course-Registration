@@ -19,6 +19,16 @@ public class MyLogger{
 	}
     }
 
+    //Convert from int to debug level
+    public DebugLevel typeConversion(int levelIn){
+        switch (levelIn) {
+            case 2: debugLevel = DebugLevel.CONSTRUCTOR; break;
+            case 1: debugLevel = DebugLevel.FILE_PROCESSOR; break;
+            default: debugLevel = DebugLevel.NONE; break;
+        }
+        return debugLevel;
+    }
+
     public static void setDebugValue (DebugLevel levelIn) {
 	debugLevel = levelIn;
     }

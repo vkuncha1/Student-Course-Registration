@@ -56,8 +56,7 @@ public class BSTBuilder {
         ArrayList<Integer> bstInplist = new ArrayList<Integer>();
         FileProcessor fp =new FileProcessor();
         bstInplist = fp.ParseInput(bstinput);
-        //calling the bst insert method.
-        //try {
+
         int i;
         Node main_bst_node;
         Node bkup_1_node;
@@ -76,13 +75,7 @@ public class BSTBuilder {
             //increment only main tree by given value
 
 
-
         }
-        //}
-        //catch(Exception e)
-        //{
-        //    System.err.println("Unable to insert Bnumber due to : "+e);
-        //}
 
         bst_result= main_tree.display_bst();
         backup_1_result = backup_1.display_bst_bkp1();

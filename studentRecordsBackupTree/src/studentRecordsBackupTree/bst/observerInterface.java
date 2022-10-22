@@ -2,5 +2,5 @@ package studentRecordsBackupTree.bst;
 
 public interface observerInterface {
 
-    public void receiveData();
+    public Node receiveData(Node OnjIn);
 }

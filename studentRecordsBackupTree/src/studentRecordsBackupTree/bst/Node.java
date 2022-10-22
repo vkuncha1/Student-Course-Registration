@@ -9,7 +9,7 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
     private String description;
     private Node left;
     private Node right;
-
+    private ArrayList<Node> Observers = new ArrayList<>();
 
 
     /**
@@ -74,57 +74,45 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
         right = rightIn;
     }
 
+    public ArrayList<Node> getObservers() {
+        return Observers;
+    }
 
-
-
+    public void setObservers(Node observersIn) {
+        Observers = observersIn.getObservers();
+    }
 
     /**
      //     * Register the backups as observers
      //     * @param objIn
      //     */
 
-
     @Override
     public void registerObserver(Node ObjIn) {
-        //listeners.add(ObjIn);
-    }
-
-    /**
-     * @param ObjIn
-     */
-    @Override
-    public void unregisterObserver(Node ObjIn) {
-        //listeners.remove(ObjIn);
+        Observers.add(ObjIn);
     }
 
     /**
      * Un Register the backups as observers
-     * @param objIn
+     * @param ObjIn
      */
 
-
-    /**
-     * @param
-     */
     @Override
-    public void notifyobs() {
-        //for(Node obs :  listeners ){
-        //    obs.receiveData();
-        //}
+    public void unregisterObserver(Node ObjIn) {
+        Observers.remove(ObjIn);
     }
 
     /**
-     *
-     * @param
+     * Notify every observer about the update
+     * @param ObjIn
      */
     @Override
-    public void receiveData() {
+    public void notifyobs(Node ObjIn) {
+        for(Node observer : Observers){
+            observer.receiveData(ObjIn);
+        }
+    }
 
-    }
-    public void upload(int bnumberIn){
-        Bnumber = bnumberIn;
-        notifyobs();
-    }
     public Node clone() {
         try {
             return (Node) super.clone();
@@ -133,6 +121,21 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
         }
     }
 
+    @Override
+    public String toString() {
+        return "Node{" +
+                "Bnumber=" + Bnumber +
+                ", description='" + description + '\'' +
+                '}';
+    }
 
 
+    /**
+     *
+     */
+    @Override
+    public Node receiveData(Node  ObjIn) {
+        return ObjIn;
+
+    }
 }

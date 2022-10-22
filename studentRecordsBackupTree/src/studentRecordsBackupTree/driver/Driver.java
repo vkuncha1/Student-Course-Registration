@@ -24,6 +24,5 @@ public class Driver {
 		result.FileOutputSum(bstbuilder.getBst_result(),"BST");
 		result.FileOutputSum(bstbuilder.getBackup_1_result(),"backup_1");
 		result.FileOutputSum(bstbuilder.getBackup_2_result(),"backup_2");
-
 	}
 }

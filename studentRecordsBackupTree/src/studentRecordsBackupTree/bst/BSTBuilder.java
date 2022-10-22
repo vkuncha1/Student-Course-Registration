@@ -1,5 +1,7 @@
 package studentRecordsBackupTree.bst;
 
+import studentRecordsBackupTree.util.FileProcessor;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -42,8 +44,7 @@ public class BSTBuilder {
     }
 
     /**
-     * Read the input from bstinput.txt and calls insert method.
-     *
+     * Use File Processor API to get the input
      */
 
     public void bstInput(){
@@ -52,24 +53,9 @@ public class BSTBuilder {
         //File path for CourseInfo
         String currentpath = new File("").getAbsolutePath();
         String bstinput = currentpath + "/studentRecordsBackupTree/bstinput.txt";
-        ArrayList<Integer> bstlist = new ArrayList<Integer>();
-        try {
-            File myObj = new File(bstinput);
-            Scanner myReader = null;
-            try {
-                myReader = new Scanner(myObj);
-                while (myReader.hasNextLine()) {
-                    int data = Integer.parseInt(myReader.nextLine());
-                    bstlist.add(data);
-                }
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            }
-
-        } catch (RuntimeException e) {
-            throw new RuntimeException(e);
-        }
-
+        ArrayList<Integer> bstInplist = new ArrayList<Integer>();
+        FileProcessor fp =new FileProcessor();
+        bstInplist = fp.ParseInput(bstinput);
         //calling the bst insert method.
         //try {
         int i;
@@ -78,13 +64,18 @@ public class BSTBuilder {
         Node bkup_2_node;
         BST backup_1 = new BST();
         BST backup_2 = new BST();
-        for (i = 0; i < bstlist.size(); i++) {
-            main_bst_node = new Node(bstlist.get(i));
+        Node node = new Node();
+        for (i = 0; i < bstInplist.size(); i++) {
+            main_bst_node = new Node(bstInplist.get(i));
             main_tree.insert(main_bst_node);
             Node backup_1_node = main_bst_node.clone();
             Node backup_2_node  = main_bst_node.clone();
             backup_1.insert(backup_1_node);
             backup_2.insert(backup_2_node);
+
+            //increment only main tree by given value
+
+
 
         }
         //}

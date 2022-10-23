@@ -9,19 +9,9 @@ import java.util.ArrayList;
 
 public class BST{
     private Node root;
-    private int incr_value;
 
-    public BST(int incr_value) {
-        this.incr_value = incr_value;
-    }
 
-    public int getIncr_value() {
-        return incr_value;
-    }
 
-    public void setIncr_value(int incr_value) {
-        this.incr_value = incr_value;
-    }
 
     /**
      * Constructor of the BST class
@@ -52,20 +42,23 @@ public class BST{
             return root;
         }
     }
+
+
+
     /**
      * Inorder Traversal display of the main BST
      */
 
     ArrayList<Integer> output_list_incr =new ArrayList<>();
-    public ArrayList<Integer> increment_bst() {
-        incr_tree(root);
+    public ArrayList<Integer> increment_bst(int incr) {
+        incr_tree(root, incr);
         return output_list_incr;
     }
-    public void incr_tree(Node root) {
+    public void incr_tree(Node root,int incr) {
         if (root != null) {
-            incr_tree(root.getLeft());
-            output_list_incr.add(root.getBnumber()+getIncr_value());
-            incr_tree(root.getRight());
+            incr_tree(root.getLeft(),incr);
+            output_list_incr.add(root.getBnumber()+incr);
+            incr_tree(root.getRight(),incr);
         }
     }
 
@@ -87,15 +80,17 @@ public class BST{
      */
 
     ArrayList<Integer> output_list_incr_bk1 =new ArrayList<>();
-    public ArrayList<Integer> increment_bst_bkp1() {
-        incr_bk1_tree(root);
-        return output_list_bkp1;
+
+
+    public ArrayList<Integer> increment_bst_bkp1(int incr) {
+        incr_bk1_tree(root,incr);
+        return output_list_incr_bk1;
     }
-    public void incr_bk1_tree(Node root) {
+    public void incr_bk1_tree(Node root,int incr) {
         if (root != null) {
-            incr_bk1_tree(root.getLeft());
-            output_list_incr_bk1.add(root.getBnumber()+getIncr_value());
-            incr_bk1_tree(root.getRight());
+            incr_bk1_tree(root.getLeft(),incr);
+            output_list_incr_bk1.add(root.getBnumber()+incr);
+            incr_bk1_tree(root.getRight(),incr);
         }
     }
 
@@ -117,15 +112,15 @@ public class BST{
      */
 
     ArrayList<Integer> output_list_incr_bk2 =new ArrayList<>();
-    public ArrayList<Integer> increment_bst_bkp2() {
-        incr_bk2_tree(root);
-        return output_list_bkp1;
+    public ArrayList<Integer> increment_bst_bkp2(int incr) {
+        incr_bk2_tree(root,incr);
+        return output_list_incr_bk2;
     }
-    public void incr_bk2_tree(Node root) {
+    public void incr_bk2_tree(Node root,int incr) {
         if (root != null) {
-            incr_bk2_tree(root.getLeft());
-            output_list_incr_bk2.add(root.getBnumber()+getIncr_value());
-            incr_bk2_tree(root.getRight());
+            incr_bk2_tree(root.getLeft(),incr);
+            output_list_incr_bk2.add(root.getBnumber()+incr);
+            incr_bk2_tree(root.getRight(),incr);
         }
     }
     ArrayList<Integer> output_list_bkp2 =new ArrayList<>();

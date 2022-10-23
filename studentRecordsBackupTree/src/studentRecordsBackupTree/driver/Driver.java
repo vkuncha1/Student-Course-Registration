@@ -11,14 +11,16 @@ public class Driver {
 
 	public static void main(String[] args) {
 
-		if ((args.length == 5) && args[0].equals("bstInput.txt") && args[1].equals("bstOutput.txt") && args[2].equals("errorLog.txt")) {
+//		if ((args.length == 5) && args[0].equals("bstInput.txt") && args[1].equals("bstOutput.txt") && args[2].equals("errorLog.txt")) {
 
 			/**
 			 *  BSTBuilder to build the three trees.
 			 */
 			BST bst = new BST();
-			bst.setIncr_value(Integer.parseInt(args[4]));
+
+
 			BSTBuilder bstbuilder = new BSTBuilder(bst);
+			bstbuilder.setIncr_value(Integer.parseInt(args[4]));
 			bstbuilder.bstInput();
 
 			/**
@@ -60,9 +62,9 @@ public class Driver {
 			result.TerminalIncrOutputSum(bstbuilder.getIncrBst_result(), "BST");
 			result.TerminalIncrOutputSum(bstbuilder.getBst_bkup1_incr_result(), "backup_1");
 			result.TerminalIncrOutputSum(bstbuilder.getBst_bkup2_incr_result(), "backup_2");
-		} else {
-			System.err.println("Error: Incorrect number of arguments. Program accepts 5 argumnets.");
-			System.exit(0);
-		}
+//		} else {
+//			System.err.println("Error: Incorrect number of arguments. Program accepts 5 argumnets.");
+//			System.exit(0);
+//		}
 	}
 }

@@ -11,6 +11,11 @@ import java.util.Scanner;
 
 public class BSTBuilder {
     private BST main_tree;
+    private int incr_value;
+
+    public void setIncr_value(int incr_value) {
+        this.incr_value = incr_value;
+    }
 
     ArrayList<Integer> bst_result,bst_incr_result,backup_1_result,backup_2_result,bst_bkup1_incr_result,bst_bkup2_incr_result;
 
@@ -95,7 +100,7 @@ public class BSTBuilder {
                 backup_2.insert(backup_2_node);
             }
             bst_result = main_tree.display_bst();
-            bst_incr_result = main_tree.increment_bst();
+            bst_incr_result = main_tree.increment_bst(incr_value);
 
 
             //After Incrementing the main tree notify the backups about update.
@@ -104,8 +109,8 @@ public class BSTBuilder {
 
             backup_1_result = backup_1.display_bst_bkp1();
             backup_2_result = backup_2.display_bst_bkp2();
-            bst_bkup1_incr_result = backup_1.increment_bst();
-            bst_bkup2_incr_result = backup_2.increment_bst();
+            bst_bkup1_incr_result = backup_1.increment_bst_bkp1(incr_value);
+            bst_bkup2_incr_result = backup_2.increment_bst_bkp2(incr_value);
 
         } catch (Exception e) {
             String bstErr = "Error Genarating BST's :" + e + ", Please,try again";

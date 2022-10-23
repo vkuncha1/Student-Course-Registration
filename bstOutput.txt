@@ -384,3 +384,639 @@ backup_1: 54
 backup_2: 54
 
 
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 54
+backup_2: 54
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 0
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 64
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 49
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 59
+backup_2: 49
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 59
+backup_2: 59
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 59
+backup_1: 59
+backup_2: 59
+
+
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 64
+backup_1: 64
+backup_2: 64
+
+

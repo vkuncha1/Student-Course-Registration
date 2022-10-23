@@ -43,5 +43,17 @@ public class Driver {
 		result.TerminalOutputSum(bstbuilder.getBst_result(),"BST");
 		result.TerminalOutputSum(bstbuilder.getBackup_1_result(),"backup_1");
 		result.TerminalOutputSum(bstbuilder.getBackup_2_result(),"backup_2");
+		/**
+		 * print the sum of all the B-Numbers in each of the three trees in file after increment
+		 */
+		result.FileOutputInrSum(bstbuilder.getIncrBst_result(),"BST");
+		result.FileOutputInrSum(bstbuilder.getBst_bkup1_incr_result(),"backup_1");
+		result.FileOutputInrSum(bstbuilder.getBst_bkup2_incr_result(),"backup_2");
+		/**
+		 * print the sum of all the B-Numbers in each of the three trees in terminal after increment
+		 */
+		result.TerminalIncrOutputSum(bstbuilder.getIncrBst_result(),"BST");
+		result.TerminalIncrOutputSum(bstbuilder.getBst_bkup1_incr_result(),"backup_1");
+		result.TerminalIncrOutputSum(bstbuilder.getBst_bkup2_incr_result(),"backup_2");
 	}
 }

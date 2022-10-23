@@ -1,6 +1,8 @@
 package studentRecordsBackupTree.bst;
 
+import java.util.ArrayList;
+
 public interface observerInterface {
 
-    public Node receiveData(Node OnjIn);
+    public void receiveData();
 }

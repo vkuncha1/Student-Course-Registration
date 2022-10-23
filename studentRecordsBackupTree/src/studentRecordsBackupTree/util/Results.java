@@ -95,6 +95,33 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
         }
     }
 
+    public void FileOutputInrSum(ArrayList<Integer> outputIn, String bstIn) {
+        try {
+            String currentpath = new File("").getAbsolutePath();
+            String regErrorPath = currentpath + "/bstOutput.txt";
+            FileWriter regResults = new FileWriter(regErrorPath, true);
+
+            if (bstIn.equals("BST")) {
+                regResults.write("// Sum of all the B-Numbers after increment" + System.lineSeparator());
+                regResults.write("BST: " + get_sum(outputIn) + System.lineSeparator());
+            }
+            if (bstIn.equals("backup_1")) {
+                regResults.write("backup_1: " + get_sum(outputIn) + System.lineSeparator());
+            }
+            if (bstIn.equals("backup_2")) {
+                regResults.write("backup_2: " + get_sum(outputIn) + System.lineSeparator());
+                regResults.write(System.lineSeparator());
+                regResults.write(System.lineSeparator());
+            }
+
+            regResults.close();
+        } catch (Exception ex) {
+            String Err = "Error While Writing sum of nodes into file :" + ex + ", Please,try again";
+            Results conf = new Results();
+            conf.writeError(Err);
+        }
+    }
+
     /**
      * TerminalOutput method uses Logger to print the messages in terminal.
      * @param outputIn
@@ -134,6 +161,27 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface {
 
             if (bstIn.equals("BST")) {
                 logger.writeMessage("// Sum of all the B-Numbers in each tree",logger.typeConversion(1) );
+                logger.writeMessage("BST: " + get_sum(outputIn) ,logger.typeConversion(1));
+            }
+            if (bstIn.equals("backup_1")) {
+                logger.writeMessage("Backup-1: " + get_sum(outputIn),logger.typeConversion(1) );
+            }
+            if (bstIn.equals("backup_2")) {
+                logger.writeMessage("Backup-2: " + get_sum(outputIn) + System.lineSeparator() ,logger.typeConversion(1));
+            }
+        } catch (Exception ex) {
+            String Err = "Error While printing the messages in terminal :" + ex + ", Please,try again";
+            Results conf = new Results();
+            conf.writeError(Err);
+        }
+    }
+
+    public void TerminalIncrOutputSum(ArrayList<Integer> outputIn, String bstIn) {
+        try {
+            MyLogger logger = new MyLogger();
+
+            if (bstIn.equals("BST")) {
+                logger.writeMessage("// Sum of all the B-Numbers after increment",logger.typeConversion(1) );
                 logger.writeMessage("BST: " + get_sum(outputIn) ,logger.typeConversion(1));
             }
             if (bstIn.equals("backup_1")) {

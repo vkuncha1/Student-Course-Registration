@@ -42,7 +42,22 @@ public class BST{
     /**
      * Inorder Traversal display of the main BST
      */
+    int incrVal = 1;
+    ArrayList<Integer> output_list_incr =new ArrayList<>();
+    public ArrayList<Integer> increment_bst() {
+        incr_tree(root);
+        return output_list_incr;
+    }
+    public void incr_tree(Node root) {
+        if (root != null) {
+            incr_tree(root.getLeft());
+            output_list_incr.add(root.getBnumber()+incrVal);
+            incr_tree(root.getRight());
+        }
+    }
+
     ArrayList<Integer> output_list =new ArrayList<>();
+
     public ArrayList<Integer> display_bst() {
         display(root);
         return output_list;
@@ -57,6 +72,20 @@ public class BST{
     /**
      * Inorder Traversal display of the backup_1 BST
      */
+
+    ArrayList<Integer> output_list_incr_bk1 =new ArrayList<>();
+    public ArrayList<Integer> increment_bst_bkp1() {
+        incr_bk1_tree(root);
+        return output_list_bkp1;
+    }
+    public void incr_bk1_tree(Node root) {
+        if (root != null) {
+            incr_bk1_tree(root.getLeft());
+            output_list_incr_bk1.add(root.getBnumber()+incrVal);
+            incr_bk1_tree(root.getRight());
+        }
+    }
+
     ArrayList<Integer> output_list_bkp1 =new ArrayList<>();
     public ArrayList<Integer> display_bst_bkp1() {
         display1(root);
@@ -73,6 +102,19 @@ public class BST{
     /**
      * Inorder Traversal display of the backup_2 BST
      */
+
+    ArrayList<Integer> output_list_incr_bk2 =new ArrayList<>();
+    public ArrayList<Integer> increment_bst_bkp2() {
+        incr_bk2_tree(root);
+        return output_list_bkp1;
+    }
+    public void incr_bk2_tree(Node root) {
+        if (root != null) {
+            incr_bk2_tree(root.getLeft());
+            output_list_incr_bk2.add(root.getBnumber()+incrVal);
+            incr_bk2_tree(root.getRight());
+        }
+    }
     ArrayList<Integer> output_list_bkp2 =new ArrayList<>();
     public ArrayList<Integer> display_bst_bkp2() {
         display2(root);

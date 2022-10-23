@@ -2,8 +2,9 @@ package studentRecordsBackupTree.bst;
 import java.lang.Cloneable;
 
 import java.util.ArrayList;
+import java.util.Observer;
 
-public class Node implements observerInterface,subjectInterface,Cloneable{
+public class Node implements subjectInterface, observerInterface,Cloneable{
     //Declaring the Bnumber and description variables
     private int Bnumber;
     private String description;
@@ -27,6 +28,8 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
         left = null;
         right = null;
     }
+
+    int incrVal = 1;
 
 
     /**
@@ -104,12 +107,11 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
 
     /**
      * Notify every observer about the update
-     * @param ObjIn
      */
     @Override
-    public void notifyobs(Node ObjIn) {
+    public void notifyobs() {
         for(Node observer : Observers){
-            observer.receiveData(ObjIn);
+            observer.receiveData();
         }
     }
 
@@ -122,6 +124,19 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
     }
 
     @Override
+    public void receiveData() {
+
+    }
+
+    public void update(Node root,int incrVal) {
+        if (root != null) {
+            update(root.getLeft(),incrVal);
+
+            //update(root.getRight().getBnumber() + incrVal);
+        }
+    }
+
+    @Override
     public String toString() {
         return "Node{" +
                 "Bnumber=" + Bnumber +
@@ -129,12 +144,5 @@ public class Node implements observerInterface,subjectInterface,Cloneable{
                 '}';
     }
 
-    /**
-     *
-     */
-    @Override
-    public Node receiveData(Node  ObjIn) {
-        return ObjIn;
 
-    }
 }

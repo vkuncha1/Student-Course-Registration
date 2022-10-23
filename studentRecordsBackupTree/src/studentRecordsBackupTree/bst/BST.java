@@ -9,6 +9,19 @@ import java.util.ArrayList;
 
 public class BST{
     private Node root;
+    private int incr_value;
+
+    public BST(int incr_value) {
+        this.incr_value = incr_value;
+    }
+
+    public int getIncr_value() {
+        return incr_value;
+    }
+
+    public void setIncr_value(int incr_value) {
+        this.incr_value = incr_value;
+    }
 
     /**
      * Constructor of the BST class
@@ -42,7 +55,7 @@ public class BST{
     /**
      * Inorder Traversal display of the main BST
      */
-    int incrVal = 1;
+
     ArrayList<Integer> output_list_incr =new ArrayList<>();
     public ArrayList<Integer> increment_bst() {
         incr_tree(root);
@@ -51,7 +64,7 @@ public class BST{
     public void incr_tree(Node root) {
         if (root != null) {
             incr_tree(root.getLeft());
-            output_list_incr.add(root.getBnumber()+incrVal);
+            output_list_incr.add(root.getBnumber()+getIncr_value());
             incr_tree(root.getRight());
         }
     }
@@ -81,7 +94,7 @@ public class BST{
     public void incr_bk1_tree(Node root) {
         if (root != null) {
             incr_bk1_tree(root.getLeft());
-            output_list_incr_bk1.add(root.getBnumber()+incrVal);
+            output_list_incr_bk1.add(root.getBnumber()+getIncr_value());
             incr_bk1_tree(root.getRight());
         }
     }
@@ -111,7 +124,7 @@ public class BST{
     public void incr_bk2_tree(Node root) {
         if (root != null) {
             incr_bk2_tree(root.getLeft());
-            output_list_incr_bk2.add(root.getBnumber()+incrVal);
+            output_list_incr_bk2.add(root.getBnumber()+getIncr_value());
             incr_bk2_tree(root.getRight());
         }
     }

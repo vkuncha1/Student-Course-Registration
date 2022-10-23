@@ -366,3 +366,21 @@ backup_1: 54
 backup_2: 54
 
 
+// Inorder traversal
+BST: 5, 7, 10, 13, 14
+backup_1: 5, 7, 10, 13, 14
+backup_2: 5, 7, 10, 13, 14
+
+
+// Sum of all the B-Numbers in each tree
+BST: 49
+backup_1: 49
+backup_2: 49
+
+
+// Sum of all the B-Numbers after increment
+BST: 54
+backup_1: 54
+backup_2: 54
+
+

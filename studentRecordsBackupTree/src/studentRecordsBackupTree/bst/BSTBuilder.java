@@ -71,7 +71,7 @@ public class BSTBuilder {
             main_tree = new BST();
             //File path for CourseInfo
             String currentpath = new File("").getAbsolutePath();
-            String bstinput = currentpath + "/studentRecordsBackupTree/bstinput.txt";
+            String bstinput = currentpath + "/bstinput.txt";
             ArrayList<Integer> bstInplist = new ArrayList<Integer>();
             FileProcessor fp = new FileProcessor();
             bstInplist = fp.ParseInput(bstinput);

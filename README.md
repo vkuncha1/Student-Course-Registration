@@ -34,7 +34,9 @@ Command: ant -buildfile studentRecordsBackupTree/src/build.xml run -Darg0=bstInp
 Argument 3 refers to DebulLevel and Argument 4 refers to the UPDATE_VALUE
 
 -----------------------------------------------------------------------
-## Sample Input 
+## Sample Input and Output
+
+#### UPDATE_VALUE = 3
 
 #### bstInput.txt
 
@@ -63,7 +65,7 @@ BST: 64
 backup_1: 64
 backup_2: 64
 
-## Terminal Output
+#### Terminal Output
 
 // Inorder traversal
 BST: 5, 7, 10, 13, 14

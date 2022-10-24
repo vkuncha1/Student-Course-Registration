@@ -106,6 +106,20 @@ ArrayList was my choice because to store the list of observers,taking input and 
 -----------------------------------------------------------------------
 ## Description:
 
+This program takes five input arguments, bstInput.txt will include the Bnumber to be added in the binary search tree, bstOutput.txt will include the in order traversal values and the sum of the Bnumbers in tree before and after increment.
+
+Here Node is both observer and subject. So, Node class implements both observer and subject interfaces, BST class implemnts the binary search tree creation along with in order traversal display and insert. BSTBuilder will build the tree using the node and inputs we are passing one by one and then it will create a backup_1 and backup_2 trees which are backup's for main tree and save both of them as observers.
+
+Once the observers are added the same data in main tree will be inserted in backup trees using the observer pattern. Simillarly when an update is made in node like increment in this assignment then the bstBuilder will increment the value of main tree node by UPDATE_VALUE and notify all the registered observers about the change and update backups then after.
+
+Result class will implements the FileDisplayInterface and StdoutDisplayInterface. This will take care of writing the results in output file and also in terminal (using logger class). File processor will acts as an api to read the input from input file.
+
+BSTBuilder is calling the file processor API to read the input and do further process as mentioned above, File logger class uses the method called writemessage to print the output in terminal. If there are any errors in the program corresponding error message will be logged i errorLog file.
+
+Driver class will Read command line arguments, set the debugLevel in MyLogger class, use BSTBuilder to build the three trees.
+Call inorder traversal to print the values from the three trees, Call methods to print the sum of all the B-Numbers in each of the three trees,
+Call methods to print the sum of all the B-Numbers in each of the three trees in outfiles and terminal.
+
  
 
 -----------------------------------------------------------------------
